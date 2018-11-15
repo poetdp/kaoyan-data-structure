@@ -28,7 +28,6 @@ void mergeSort(int R[], int low, int high) {
 
 int main() {
     int a[] = {49, 38, 65, 97, 76, 13, 27, 49};
-    // int a[] = {1, 3, 5, 7, 2, 4, 6, 8};
     int n = sizeof(a)/sizeof(int), i;
     for(i = 0; i <= n-1; i++) {
         printf("%d ", a[i]);
