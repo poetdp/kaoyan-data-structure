@@ -2,8 +2,8 @@
 
 struct Node {
     int data;
-    struct Node *pre;
-    struct Node *next;
+    struct Node *pre;   /* 指向前驱结点的指针 */
+    struct Node *next;  /* 指向后继节点的指针 */
 };
 
 /**
