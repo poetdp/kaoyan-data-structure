@@ -6,6 +6,9 @@ struct Node {
     struct Node *next;
 };
 
+/**
+ * 为单向循环链表中的每个结点添加指向前驱的指针
+ */
 void addPre(Node *L) {
     Node *p = L;
     do {
@@ -22,14 +25,14 @@ int main() {
     }
     Node *p;
     p = &a[0];
-    do {
+    do {    /* 从前向后遍历链表 */
         printf("%d->", p->data);
         p = p->next;
     }while(p != &a[0]);
     printf("\n");
     addPre(&a[0]);
     p = &a[7];
-    do {
+    do {    /* 从后向前遍历链表 */
         printf("%d->", p->data);
         p = p->pre;
     }while(p != &a[7]);
